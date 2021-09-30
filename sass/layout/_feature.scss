@@ -1,0 +1,19 @@
+.feature-link__folder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+.feature-link__title {
+  color: var(--text-title-color);
+  margin-bottom: 10px;
+}
+.feature-link__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}

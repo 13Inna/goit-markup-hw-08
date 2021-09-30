@@ -1,3 +1,19 @@
-body {
-  background-color: gold;
-}
+@import "./utils/variables";
+@import "./base/reset";
+@import "./utils/hidden";
+@import "./base/container";
+@import "./base/section";
+@import "./components/button";
+@import "./components/title";
+@import "./components/logo";
+@import "./components/folder-list";
+@import "./components/social-set";
+@import "./components/modal";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/hero";
+@import "./layout/feature";
+@import "./layout/directions";
+@import "./layout/team";
+@import "./layout/client";
+@import "./layout/portfolio-progect";
