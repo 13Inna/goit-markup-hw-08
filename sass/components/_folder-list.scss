@@ -1,0 +1,10 @@
+.folder-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--margin-left-section-main));
+
+  & > .feature-link {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: var(--margin-left-section-main);
+  }
+}
