@@ -472,7 +472,6 @@ ul {
 .header {
   display: flex;
   border-bottom: 1px solid #ececec;
-  position: relative;
 }
 
 .site-pages {
@@ -480,13 +479,35 @@ ul {
   align-items: center;
 }
 
+@media screen and (min-width: 480px) {
+  .site-pages {
+    display: block;
+    position: relative;
+  }
+}
+
 .site-pages__logo {
   display: inline-block;
-  margin-right: 93px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   color: var(--heder-logo-s-color);
   transition: color var(--transition-duration) var(--timing-function);
+}
+
+@media screen and (min-width: 768px) {
+  .site-pages__logo {
+    margin-left: 88px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-pages__logo {
+    margin-left: 93px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 }
 
 .site-pages__logoweb {
@@ -550,12 +571,19 @@ ul {
   display: block;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-conteiner {
+    display: none;
+  }
+}
+
 .site-nav {
   display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: none;
 }
 
 .site-nav__link {
@@ -567,6 +595,7 @@ ul {
   color: var(--text-title-color);
   position: relative;
   transition: background-color var(--transition-duration) var(--timing-function);
+  display: none;
 }
 
 .site-contakt {
@@ -576,12 +605,14 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: none;
 }
 
 .site-contakt__nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  display: none;
 }
 
 .site-contakt__nav:hover, .site-contakt__nav:focus {
@@ -592,6 +623,7 @@ ul {
 .site-contakt__icon {
   margin-right: 10px;
   transition: fill var(--transition-duration) var(--timing-function);
+  display: none;
 }
 
 .site-contakt__nav:hover .site-contakt__icon,
@@ -601,6 +633,7 @@ ul {
 
 .site-contakt--right-indent {
   margin-right: 50px;
+  display: none;
 }
 
 .site-contakt__link {
@@ -609,6 +642,7 @@ ul {
   padding-bottom: 32px;
   color: #757575;
   transition: color var(--transition-duration) var(--timing-function);
+  display: none;
 }
 
 .footer {
