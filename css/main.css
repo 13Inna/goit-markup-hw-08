@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --text-color: #757575;
   --text-title-color: #212121;
@@ -87,8 +88,8 @@ ul {
 
 .container {
   width: 100%;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
   align-items: center;
 }
@@ -96,6 +97,18 @@ ul {
 @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 1200px;
   }
 }
 
@@ -459,6 +472,7 @@ ul {
 .header {
   display: flex;
   border-bottom: 1px solid #ececec;
+  position: relative;
 }
 
 .site-pages {
@@ -477,6 +491,63 @@ ul {
 
 .site-pages__logoweb {
   color: var(--accent-text-color);
+}
+
+/*--mобильное меню---*/
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-button .icon-cross {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button .icon-cross {
+    display: none;
+  }
+}
+
+.menu-button .is-open .icon-cross {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button .is-open .icon-cross {
+    display: none;
+  }
+}
+
+.menu-button .is-open .icon-menu {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button .is-open .icon-menu {
+    display: none;
+  }
+}
+
+.menu-conteiner {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+}
+
+.menu-conteiner.is-open {
+  display: block;
 }
 
 .site-nav {
@@ -679,12 +750,10 @@ ul {
 .main-header__box {
   display: block;
   position: relative;
-  /* max-width: 1600px;
-  height: 600px;*/
   margin-left: auto;
   margin-right: auto;
   padding-top: 118px;
-  padding-bottom: 198px;
+  padding-bottom: 118px;
   text-align: center;
   background: #2f303a;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/heading/developed.jpg");
@@ -693,11 +762,19 @@ ul {
   background-size: cover;
 }
 
+@media screen and (min-width: 1200px) {
+  .main-header__box {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
 .main-header__title {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+  max-width: 360px;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.61;
@@ -705,6 +782,14 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text-color-white);
+}
+
+@media screen and (min-width: 1200px) {
+  .main-header__title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .feature-link__folder {

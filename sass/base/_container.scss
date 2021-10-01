@@ -1,11 +1,17 @@
 .container {
   width: 100%;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
   align-items: center;
 
   @media screen and (min-width: 480px) {
     max-width: 480px;
+  }
+  @media screen and (min-width: 480px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 480px) {
+    max-width: 1200px;
   }
 }

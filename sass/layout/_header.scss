@@ -1,6 +1,7 @@
 .header {
   display: flex;
   border-bottom: 1px solid #ececec;
+  position: relative;
 }
 
 .site-pages {
@@ -20,6 +21,47 @@
 
 .site-pages__logoweb {
   color: var(--accent-text-color);
+}
+
+/*--mобильное меню---*/
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.menu-button .icon-cross {
+  display: block;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.menu-button .is-open .icon-cross {
+  display: block;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.menu-button .is-open .icon-menu {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.menu-conteiner {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  &.is-open {
+    display: block;
+  }
 }
 
 .site-nav {
