@@ -483,6 +483,10 @@ ul {
   border-bottom: 1px solid #ececec;
 }
 
+.container {
+  justify-content: space-between;
+}
+
 .site-pages {
   display: flex;
   align-items: center;
@@ -497,6 +501,7 @@ ul {
 
 .site-pages__logo {
   display: inline-block;
+  margin: 0;
   padding-top: 16px;
   padding-bottom: 16px;
   color: var(--heder-logo-s-color);
@@ -654,6 +659,8 @@ ul {
 }
 
 .mobile-menu {
+  width: 100vw;
+  height: 100vh;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -661,13 +668,49 @@ ul {
 
 .mobile-menu__link {
   display: flex;
+  margin: 0;
+  padding: 0;
   margin-bottom: 32px;
+  text-decoration: none;
+}
+
+.mb {
+  font-family: Roboto;
+  font-style: normal;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.175;
-  text-align: center;
   letter-spacing: 0.02em;
-  text-decoration: none;
+  color: #212121;
+}
+
+.mbe {
+  padding-top: 302px;
+  font-size: 34px;
+  line-height: 1.17;
+  color: #2196f3;
+}
+
+.mbt {
+  margin-bottom: 64px;
+  font-size: 24px;
+  line-height: 1.17;
+  color: #757575;
+}
+
+.mobile-menu-social-set {
+  display: flex;
+}
+
+.mobile-menu-social-set__link {
+  font-size: 18px;
+  line-height: 1.22;
+  color: #2196f3;
+  margin-right: 20px;
+}
+
+.mobile-menu-social-set__link--indent {
+  margin-right: 0;
 }
 
 .footer {
