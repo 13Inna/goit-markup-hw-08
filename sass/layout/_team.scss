@@ -13,8 +13,24 @@
     flex-basis: calc(100% / 4 - 30px);
     margin-left: var(--margin-left-section-main);
   }
-}
+  @media screen and (max-width: 480px) {
+    width: 450px;
+  }
 
+  @media screen and (min-width: 481px) and (max-width: 1199px) {
+    width: 354px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team-set:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1199px) {
+  .team-set:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
+}
 .team-set__img--bottom-indent {
   margin-bottom: 30px;
 }
@@ -27,6 +43,12 @@
   letter-spacing: 0.03em;
 
   color: #212121;
+  @media screen and (max-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 481px) and (max-width: 1199px) {
+    width: 354px;
+  }
 }
 .team-set__text {
   font-size: 16px;
