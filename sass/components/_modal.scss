@@ -30,6 +30,15 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  margin-top: 221px;
+  @media screen and (max-width: 480px) {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 0;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 208px;
+  }
 }
 .modal-window__close-btn {
   display: flex;
@@ -77,6 +86,10 @@
   min-height: 342px;
   margin-left: 40px;
   margin-right: 40px;
+  @media screen and (max-width: 480px) {
+    width: 100vw;
+    height: 100vh;
+  }
 }
 
 .modal-window__folder--form {

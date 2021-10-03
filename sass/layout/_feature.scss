@@ -7,6 +7,12 @@
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
+  @media screen and (max-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 481px) and (max-width: 1199px) {
+    width: 354px;
+  }
 }
 .feature-link__title {
   color: var(--text-title-color);
@@ -16,4 +22,7 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  @media screen and (max-width: 480px) {
+    margin-bottom: 30px;
+  }
 }

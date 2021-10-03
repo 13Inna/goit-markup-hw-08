@@ -12,6 +12,9 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  @media screen and (max-width: 480px) {
+    text-align: center;
+  }
 }
 .pre-title {
   font-family: Roboto;
