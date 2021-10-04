@@ -29,7 +29,7 @@
                     </ul>
                 </nav>
                 <ul class="site-contakt list">
-                    <li class="site-contakt__nav">
+                    <li class="site-contakt__nav site-contakt__nav--sc-indent">
                         <svg class="site-contakt__icon" width="16" height="12">
                             <use href="./images/icons.svg#icon-1envelope-hover"></use>
                         </svg>
@@ -43,6 +43,35 @@
                         <a class="site-contakt__link accent-color link" href="tel:+380961111111">+38 096 111 11 11</a>
                     </li>
                 </ul>
+                <button type="button" class="menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg width="24" height="16" aria-label="Переключатель мобильного меню">
+                        <use class="icon-menu" href="./images/icons.svg#icon-menu_24px"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="menu-container js-menu-container" id="mobile-menu">
+                <button type="button" class="menu-button js-close-menu">
+                    <svg width="24" height="16" aria-label="Переключатель мобильного меню">
+                        <use class="icon-close" href="./images/icons.svg#icon-close_24px"></use>
+                    </svg>
+                </button>
+                <div class="mobile-menu list">
+                    <ul class="mobile-menu-contact list">
+                        <li><a class="mobile-menu__link mb accent-color" href="./studio.html">Студия</a></li>
+                        <li><a class="mobile-menu__link mb accent-color" href="portfolio.html">Портфолио</a></li>
+                        <li><a class="mobile-menu__link mb accent-color" href="">Контакты</a></li>
+                        <li><a class="mobile-menu__link mbe accent-color" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                        <li><a class="mobile-menu__link mbt accent-color" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    </ul>
+                    <ul class="mobile-menu-social-set list">
+                        <li><a href="" class="mobile-menu-social-set__link mb link">Instagram</a></li>
+                        <li><a href="" class="mobile-menu-social-set__link mb link">Twitter</a></li>
+                        <li><a href="" class="mobile-menu-social-set__link mb  link">Facebook</a></li>
+                        <li><a href=""
+                                class="mobile-menu-social-set__link mobile-menu-social-set__link--indent mb  link">LinkedIn</a></li>
+                    </ul>
+                </div>
             </div>
         </header>
      
@@ -196,74 +225,77 @@
             </section>
         </main>
         <!--Footer--> 
-        <footer class="footer">
-            <div class="container display">
-                <div class="site-footer">
-                    <a class="logo site-footer__logo  accent-color link" href="./index.html"> <span
-                            class="site-pages__logoweb">Web</span>Studio</a>
-                    <address class="footer-folder">
-                        <ul class="footer-contact list">
-                            <li> <a class="footer-contact__link accent-color footer-contact__link--color link"
-                                    href="https://goo.gl/maps/k5yf5XhUNcUCfMpx5" target="_blank" rel="noopener noreferrer">г.
-                                    Киев, пр-т Леси Украинки, 26</a></li>
-                            <li> <a class="footer-contact__link accent-color link"
-                                    href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                            <li> <a class="footer-contact__link accent-color footer-contact__link--ident link"
-                                    href="tel:+380961111111">+38 096 111 11 11</a></li>
-                        </ul>
-                    </address>
-                </div>
-                <div class="footer-social">
-                    <h2 class="target-title footer-social__title">Присоединяйтесь</h2>
-                    <ul class="social-set social-set--bottom-ident list">
-                        <li class="social-cart--right-indent">
-                            <a href="" class="social-cart__link link">
-                                <svg class="social-cart__icon" width="20" height="20">
-                                    <use href="./images/icons.svg#icon-instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="social-cart--right-indent">
-                            <a href="" class="social-cart__link link">
-                                <svg class="social-cart__icon" width="20" height="20">
-                                    <use href="./images/icons.svg#icon-twitter"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="social-cart--right-indent">
-                            <a href="" class="social-cart__link link">
-                                <svg class="social-cart__icon" width="20" height="20">
-                                    <use href="./images/icons.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="social-cart--right-indent">
-                            <a href="" class="social-cart__link link">
-                                <svg class="social-cart__icon" width="20" height="20">
-                                    <use href="./images/icons.svg#icon-linkedin"></use>
-                                </svg>
-                            </a>
-                        </li>
+    <footer class="footer">
+        <div class="container footer-page display">
+            <div class="site-footer">
+                <a class="logo site-footer__logo  accent-color link" href="./index.html"> <span
+                        class="site-pages__logoweb">Web</span>Studio</a>
+                <address class="footer-folder">
+                    <ul class="footer-contact list">
+                        <li> <a class="footer-contact__link accent-color footer-contact__link--color link"
+                                href="https://goo.gl/maps/k5yf5XhUNcUCfMpx5" target="_blank" rel="noopener noreferrer">г.
+                                Киев, пр-т Леси Украинки, 26</a></li>
+                        <li> <a class="footer-contact__link accent-color link"
+                                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li> <a class="footer-contact__link accent-color footer-contact__link--ident link"
+                                href="tel:+380961111111">+38 096 111 11 11</a></li>
                     </ul>
-        
-                </div>
-                <div class="footer-form">
-                    <h2 class="target-title footer-form__title">Подпишитесь на рассылку</h2>
-                    <form class="footer-form__send">
-                        <div class="footer-form__mail">
-                            <input type="email" class="footer-form__input" name="mail" id="mail" autocomplete>
-                            <label for="mail" class="footer-form__label">E-mail</label>
-                        </div>
-                        <button type="submit" class="button footer-form__button accent-button">Подписаться
-                            <a href="" class="footer-form__icon-link">
-                                <svg class="footer-form__icon" width="24" height="24">
-                                    <use href="./images/icons.svg#icon-icon-send"></use>
-                                </svg>
-                            </a>
-                        </button>
-                    </form>
-                </div>
+                </address>
             </div>
-        </footer>
+            <div class="footer-social">
+                <h2 class="target-title footer-social__title">Присоединяйтесь</h2>
+                <ul class="social-set social-set--bottom-ident list">
+                    <li class="social-cart--right-indent">
+                        <a href="" class="social-cart__link link">
+                            <svg class="social-cart__icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-cart--right-indent">
+                        <a href="" class="social-cart__link link">
+                            <svg class="social-cart__icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-cart--right-indent">
+                        <a href="" class="social-cart__link link">
+                            <svg class="social-cart__icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-cart--right-indent">
+                        <a href="" class="social-cart__link link">
+                            <svg class="social-cart__icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-form">
+                <h2 class="target-title footer-form__title">Подпишитесь на рассылку</h2>
+                <form class="footer-form__send">
+                    <div class="footer-form__mail">
+                        <input type="email" class="footer-form__input" name="mail" id="mail" autocomplete>
+                        <label for="mail" class="footer-form__label">E-mail</label>
+                    </div>
+                    <button type="submit" class="button footer-form__button accent-button">Подписаться
+                        <a href="" class="footer-form__icon-link">
+                            <svg class="footer-form__icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-icon-send"></use>
+                            </svg>
+                        </a>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"></script>
+        <script defer src="js/mobile-menu.js"></script>
     </body>
 </html>

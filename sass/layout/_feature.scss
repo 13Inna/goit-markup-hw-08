@@ -7,11 +7,11 @@
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
-  @media screen and (max-width: 480px) {
-    width: 450px;
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    max-width: 450px;
   }
   @media screen and (min-width: 481px) and (max-width: 1199px) {
-    width: 354px;
+    max-width: 354px;
   }
 }
 .feature-link__title {

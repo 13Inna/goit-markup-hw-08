@@ -19,30 +19,3 @@
     cursor: pointer;
   }
 }
-.portfolio-button {
-  display: inline-block;
-  padding: 6px 22px;
-  margin-right: 8px;
-  margin-bottom: 50px;
-  border-radius: 4px;
-  border: none;
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-
-  color: var(--text-title-color);
-  background: #f5f4fa;
-}
-.btn-first {
-  color: var(--text-color-white);
-  background-color: var(--accent-text-color);
-}
-.main-filters {
-  display: flex;
-}
-
-.filters-ul {
-  display: flex;
-  justify-content: center;
-}

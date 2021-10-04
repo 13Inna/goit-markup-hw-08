@@ -13,12 +13,12 @@
     flex-basis: calc(100% / 4 - 30px);
     margin-left: var(--margin-left-section-main);
   }
-  @media screen and (max-width: 480px) {
-    width: 450px;
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    max-width: 450px;
   }
 
   @media screen and (min-width: 481px) and (max-width: 1199px) {
-    width: 354px;
+    max-width: 354px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -43,11 +43,12 @@
   letter-spacing: 0.03em;
 
   color: #212121;
-  @media screen and (max-width: 480px) {
-    width: 450px;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    max-width: 450px;
   }
   @media screen and (min-width: 481px) and (max-width: 1199px) {
-    width: 354px;
+    max-width: 354px;
   }
 }
 .team-set__text {

@@ -30,14 +30,10 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  margin-top: 221px;
-  @media screen and (max-width: 480px) {
-    width: 100vw;
-    height: 100vh;
-    margin-top: 0;
-  }
-  @media screen and (min-width: 768px) {
-    margin-top: 208px;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 450px;
+    min-height: 609px;
   }
 }
 .modal-window__close-btn {
@@ -86,14 +82,24 @@
   min-height: 342px;
   margin-left: 40px;
   margin-right: 40px;
-  @media screen and (max-width: 480px) {
-    width: 100vw;
-    height: 100vh;
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    margin-left: 0px;
+    margin-right: 0px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
 }
 
 .modal-window__folder--form {
   margin-bottom: 10px;
+}
+.modal-window__folder {
+  @media screen and(min-width:320px) and(max-width:480px) {
+    width: 370px;
+    margin-right: 0;
+  }
 }
 .modal-window__lable {
   display: block;
@@ -108,6 +114,9 @@
 .modal-window__input-wrap {
   display: block;
   position: relative;
+  @media screen and(min-width:320px) and(max-width:480px) {
+    width: 370px;
+  }
 }
 .modal-window__input {
   width: 100%;
@@ -126,6 +135,7 @@
     cursor: pointer;
   }
 }
+
 .modal-window__icon {
   position: absolute;
   left: 12px;
@@ -160,6 +170,9 @@
     outline: var(--accent-text-color);
     cursor: pointer;
   }
+  @media screen and(min-width:320px) and(max-width:480px) {
+    width: 370px;
+  }
 }
 
 .modal-window__modal-comment {
@@ -177,6 +190,9 @@
 
     color: rgba(117, 117, 117, 0.5);
   }
+  @media screen and(min-width:320px) and(max-width:480px) {
+    width: 370px;
+  }
 }
 
 .modal-window__checkbox {
@@ -187,7 +203,7 @@
 }
 .modal-window__check-label {
   display: flex;
-  justify-content: center;
+
   align-items: center;
   font-weight: normal;
   font-size: 14px;
@@ -195,6 +211,10 @@
   letter-spacing: 0.03em;
 
   color: #757575;
+  @media screen and(min-width:320px) and(max-width:480px) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 .modal-window__check {
   width: 16px;
@@ -214,6 +234,11 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--accent-text-color);
+
+  @media screen and(min-width:320px) and(max-width:480px) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 
 .button__btn-modal {
